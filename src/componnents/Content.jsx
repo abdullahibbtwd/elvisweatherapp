@@ -59,7 +59,7 @@ const [dData ,setDData] = useState(false);
             const response2 = await fetch(url2);
             const data2 = await response2.json();
          
-
+            console.log(data2)
             const response = await fetch(url);
             const data = await response.json();
             
@@ -92,18 +92,18 @@ const [dData ,setDData] = useState(false);
 
             setWeData({
                
-                    tempreture1:data2.list[13].main.temp,
-                    icon1:allIcons[data2.list[13].weather[0].icon],
-                    tempreture2:data2.list[14].main.temp,
-                    icon2:allIcons[data2.list[14].weather[0].icon],
-                    tempreture3:data2.list[15].main.temp,
-                    icon3:allIcons[data2.list[15].weather[0].icon],
-                    tempreture4:data2.list[16].main.temp,
-                    icon4:allIcons[data2.list[16].weather[0].icon],
-                    tempreture5:data2.list[17].main.temp,
-                    icon5:allIcons[data2.list[17].weather[0].icon],
-                    tempreture6:data2.list[18].main.temp,
-                    icon6:allIcons[data2.list[18].weather[0].icon],
+                    tempreture1:data2.list[0].main.temp,
+                    icon1:allIcons[data2.list[0].weather[0].icon],
+                    tempreture2:data2.list[1].main.temp,
+                    icon2:allIcons[data2.list[1].weather[0].icon],
+                    tempreture3:data2.list[2].main.temp,
+                    icon3:allIcons[data2.list[2].weather[0].icon],
+                    tempreture4:data2.list[3].main.temp,
+                    icon4:allIcons[data2.list[3].weather[0].icon],
+                    tempreture5:data2.list[4].main.temp,
+                    icon5:allIcons[data2.list[4].weather[0].icon],
+                    tempreture6:data2.list[5].main.temp,
+                    icon6:allIcons[data2.list[5].weather[0].icon],
                 
             })
 
